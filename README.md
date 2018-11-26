@@ -1,8 +1,8 @@
-# wda: Write down anything, anywhere, at any time
+﻿# wda: Write down anything, anywhere, at any time
 
 ### WDA es una aplicación que te permite anotar diferentes textos y crear distintas categorías a los cuales asociar (en un futuro) los textos.
 
-
+![img](./imgs/wda.jpg)
 
 ## Categorías
 
