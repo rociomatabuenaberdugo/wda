@@ -1,0 +1,7 @@
+{
+  "name": "wda-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

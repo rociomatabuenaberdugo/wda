@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- Botón de hamburguesa del menú para poder acceder a él de un click -->
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title> Categorías </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+  <ion-list lines="full">
+    <ion-item *ngFor="let c of category">
+      <div slot="start">
+        <ion-label *ngIf="c.type == 'trabajo'"><i class="fas fa-briefcase"></i></ion-label>
+        <ion-label *ngIf="c.type == 'casa'"><i class="fas fa-home"></i></ion-label>
+        <ion-label *ngIf="c.type == 'historia'"><i class="fas fa-book"></i></ion-label>
+        <ion-label *ngIf="c.type == 'marca'"><i class="far fa-bookmark"></i></ion-label>
+        <ion-label *ngIf="c.type == 'juego'"><i class="fas fa-chess-pawn"></i></ion-label>
+        <ion-label *ngIf="c.type == 'evento'"><i class="far fa-calendar-alt"></i></ion-label>
+        <ion-label *ngIf="c.type == 'comida'"><i class="fas fa-apple-alt"></i></ion-label>
+        <ion-label *ngIf="c.type == 'notificacion'"><i class="far fa-bell"></i></ion-label>
+        <ion-label *ngIf="c.type == 'contacto'"><i class="far fa-address-book"></i></ion-label>
+        <ion-label *ngIf="c.type == 'rayo'"><i class="fas fa-bolt"></i></ion-label>
+        <ion-label *ngIf="c.type == 'llama'"><i class="fas fa-burn"></i></ion-label>
+      </div>
+      <ion-label class="nomCategory"> {{ c.name }} </ion-label>
+      <ion-icon (click)="deleteDialog(c.name, c.id)" name="trash" color="medium" size="small"></ion-icon>
+    </ion-item>
+  </ion-list>
+  <br>
+  <ion-button href="/editCategories" routerDirection="forward" expand="full">Añadir categoría</ion-button>
+</ion-content>
