@@ -40,4 +40,8 @@
 
 
 
-###### La APK se encontrará disponible en un futuro [aquí]().
+###### La APK se encuentra disponible [aquí](./apk/).
+
+## ANOTACIÓN (importante)
+#### La última modificación hecha fuera de plazo fue el día 28/11/2018, para eliminar un error que no permitía abrir la carpeta del código debido a que interpretaba que era un repositorio dentro de otro repositorio.
+![img](./imgs/ERROR_git.PNG)
